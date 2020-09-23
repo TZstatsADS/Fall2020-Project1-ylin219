@@ -1,9 +1,9 @@
 ---
 title: "A simple R Notebook for exploring the ANES cumulative time series data"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. 
 
@@ -67,7 +67,7 @@ We will be working with the SAV format of the raw ANES data, downloaded from [th
 
 Read more about [importing SPSS data into R](https://www.marsja.se/how-to-read-write-spss-files-in-the-r-statistical-environment/).
 
-```{r read in data, message = F}
+```{r read in data, message=FALSE}
 library(haven)
 anes_dat <-
     read_sav("../data/anes_timeseries_cdf.sav")
