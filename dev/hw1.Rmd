@@ -1,6 +1,8 @@
 ---
 title: "Death Penalty and Gun Control"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 <center>
